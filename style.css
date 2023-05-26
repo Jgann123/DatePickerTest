@@ -1,34 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#date-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.datepicker {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    margin-top: 15%;
+    height: 40px;
+  }
+  
+  .datepicker-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .datepicker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .datepicker-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* .selected-day {
+    background-color: #007bff;
+    color: #fff;
+  } */
+
+  .faded-day {
+    opacity: 0.5;
+  }
+  
+  .selected-day {
+    background-color: lightblue;
+  }
+  
+  .empty-day {
+    
   }
 
-.dateApp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
- input{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 15px;
-    margin-top: 10%;
-    outline: none;
-    color: rgb(184, 184, 184);
-    font-size: 18px;
-    border: 2px solid rgb(184, 184, 184);
-    border-radius: 5px;
-}
-::-webkit-calendar-picker-indicator{
-    padding: 5px;
-    border-radius: 3px;
-    filter: invert(1);
-    background-color: rgba(246, 255, 0, 0.833);
-   
-}
-
-input:hover {
-    cursor: pointer;
-}
+  .blah {
+    margin-right: 25px;
+  }
+  
