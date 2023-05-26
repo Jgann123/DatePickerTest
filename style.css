@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+i {
+    height: 100%;
+    width: 100%;
+}
+
+.input-wrapper {
+ width: 500px;
+ display: flex;
+ border-box:#ccc
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -59,10 +70,6 @@ body {
     cursor: pointer;
   }
   
-  /* .selected-day {
-    background-color: #007bff;
-    color: #fff;
-  } */
 
   .faded-day {
     opacity: 0.5;
@@ -72,10 +79,6 @@ body {
     background-color: lightblue;
   }
   
-  .empty-day {
-    
-  }
-
   .blah {
     margin-right: 25px;
   }
