@@ -9,9 +9,12 @@
 </head>
 <body>
     <div class="datepicker">
-       <input type="text" id="date-input" placeholder="YYYY-MM-DD" required 
-       pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
-       title="Enter a date in this format YYYY-MM-DD"></input>
+        <div class="input-wrapper">
+            <i class="fas fa-calendar"></i>
+            <input type="text" id="date-input" placeholder="YYYY-MM-DD" required 
+            pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])-(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))" 
+            title="Enter a date in this format YYYY-MM-DD"></input>
+        </div>
   <div class="datepicker-popup">
     <div class="datepicker-header">
       <button id="previous-month">&lt;</button>
