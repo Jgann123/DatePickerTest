@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var inputElement = document.getElementById('date-input');
+    var iconElement = document.getElementById('icon-button');
     var popupElement = document.querySelector('.datepicker-popup');
     var monthSelectElement = document.getElementById('month-select');
     var yearSelectElement = document.getElementById('year-select');
@@ -106,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // Event listeners
     inputElement.addEventListener('click', togglePopup);
+    iconElement.addEventListener('click', togglePopup);
     previousMonthButton.addEventListener('click', function () {
         var currentMonth = Number(monthSelectElement.value);
         if (currentMonth > 0) {

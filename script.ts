@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const inputElement = document.getElementById('date-input') as HTMLInputElement;
+    const iconElement = document.getElementById('icon-button') as HTMLElement;
     const popupElement = document.querySelector('.datepicker-popup') as HTMLElement;
     const monthSelectElement = document.getElementById('month-select') as HTMLSelectElement;
     const yearSelectElement = document.getElementById('year-select') as HTMLSelectElement;
@@ -134,6 +135,7 @@ function handleDateSelection(event: MouseEvent) {
   
     // Event listeners
     inputElement.addEventListener('click', togglePopup);
+    iconElement.addEventListener('click', togglePopup);
     previousMonthButton.addEventListener('click', () => {
       const currentMonth = Number(monthSelectElement.value);
       if (currentMonth > 0) {
